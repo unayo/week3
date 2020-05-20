@@ -1,0 +1,114 @@
+/*content*/
+* {
+    position: relative;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+}
+a {
+    text-decoration:none;
+}
+h2 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 96px;
+}
+h3 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+h4 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+}
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+/*layout*/
+.d-flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.justify-content-around {
+    justify-content: space-around;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-end {
+    justify-content: flex-end;
+}
+.align-items-center {
+    align-items: center;
+}
+.align-items-end {
+    align-items: flex-end
+}
+.text-center {
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+/*color*/
+.red-background {
+    background: #AA0601;
+}
+.text-cackground a{
+    color: #fff;
+    padding: 0 32px;
+}
+.red-color {
+    color: #650300;
+}
+.redlight-color {
+    color: #AA0601;
+}
+.black-color {
+    color: #000;
+}
+/*header*/
+header a {
+    color: #ffffff;
+    padding: 0 32px;
+}
+/*footer*/
+.footer {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 36px 0 27px 0;
+}
+.footer a {
+    color: #ffffff;
+    padding-right: 48px;
+}
+.footer-logo {
+    margin-right: 32px;
+}
+.footer-text {
+    font-size: 36px;
+    line-height: 54px;
+    color: #fff;
+}
+.footer-icon1 span {
+    padding-right: 23px;
+}
+.footer-icon2 span {
+    padding-right: 12px;
+}
