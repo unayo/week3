@@ -84,6 +84,9 @@ img {
     color: #000;
 }
 /*header*/
+header {
+    padding: 10px 0;
+}
 header a {
     color: #ffffff;
     padding: 0 32px;

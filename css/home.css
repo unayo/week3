@@ -120,6 +120,28 @@
     opacity: 0.5;
     transition: all .6s;
 }
+.more-img {
+    background: url(../images/img5.png) center center no-repeat;
+}
+.more-block {
+    background: #fff;
+    margin-right: 10%;
+}
+.more-text::before, .more-text::after {
+    content: 'MORE';
+    position: absolute;
+    transition: all .65s .3s;
+    transform: translateY(0px);
+    left: 0;
+}
+.more-text:hover::before {
+    opacity: 0.7;
+    transform: translateY(-85px);
+}
+.more-text:hover::after {
+    opacity: 0.3;
+    transform: translateY(-145px);
+}
 /*顧客推薦*/
 .customer {
     padding-bottom: 80px;
