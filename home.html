@@ -13,18 +13,20 @@
     <!--  HEADER START  -->
     <header class="red-background d-flex justify-content-around align-items-center">
         <h1 class="logo"><a href="home.html"><img src="images/logo.png" alt="logo"></a></h1>
-        <ul class="d-flex textBackground">
-            <li><a href="products.html">系列鏡框</a></li>
-            <li><a href="location.html">門市據點</a></li>
-            <li><a href="blog.html">部落格</a></li>
-            <li><a href="faq.html">常見問題</a></li>
-        </ul>
+        <nav>
+            <ul class="menu menu-m d-flex textBackground">
+                <li><a href="products.html">系列鏡框</a></li>
+                <li><a href="location.html">門市據點</a></li>
+                <li><a href="blog.html">部落格</a></li>
+                <li><a href="faq.html">常見問題</a></li>
+            </ul>
+        </nav>
     </header>
     <!--  HEADER END  -->
     <!--  BANNER START  -->
-    <section class="banner d-flex justify-content-end">
-        <div class="slogan d-flex justify-content-end align-items-center">
-            <h2 class="red-color container"><span>Promise-Desert 2020 早春系列</span><br>看得清，才能看得遠</h2>
+    <section class="banner">
+        <div class="slogan position-absolute container">
+            <h2 class="red-color"><span>Promise-Desert 2020 早春系列</span><br>看得清，才能看得遠</h2>
         </div>
     </section>
     <section class="intro">
@@ -48,53 +50,58 @@
     <!--  CLASSIC START  -->
     <section class="classic container">
             <h3 class="red-color text-center">經典系列鏡框</h3>
-            <div class="classic-block d-flex align-items-center">
-                <div><img src="images/optical.png" alt="optical image"></div>
-                <h3 class="redlight-color d-flex align-items-center"><img src="images/diamond.svg" alt="daimond icon">OPTICAL</h3>
-            </div>
-            <div class="classic-block d-flex align-items-center">
-                <h3 class="redlight-color d-flex align-items-center"><img src="images/sun.svg" alt="sun icon">SUNGLASSES</h3>
-                <div class="sunglasses-img"><img src="images/sunglasses-hover.png" alt="sunglasses image"></div>
-            </div>
-            <div class="classic-block d-flex align-items-center">
-                <div><img src="images/functional.png" alt="functional image"></div>
-                <h3 class="redlight-color d-flex align-items-center"><img src="images/thunder.svg" alt="thunder icon">FUNCTIONAL</h3>
-            </div>
+            <ul>
+                <li class="classic-block d-flex align-items-center">
+                    <div class="classic-item"><img src="images/optical.png" alt="optical image"></div>
+                    <h3 class="classic-icon redlight-color d-flex align-items-center"><img src="images/diamond.svg" alt="daimond icon">OPTICAL</h3>
+                </li>
+                <li class="classic-block d-flex justify-content-between align-items-center">
+                    <h3 class="classic-icon redlight-color d-flex align-items-center"><img src="images/sun.svg" alt="sun icon">SUNGLASSES</h3>
+                    <div class="sunglasses-img classic-item"><img src="images/sunglasses-hover.png" alt="sunglasses image"></div>
+                </li>
+                <li class="classic-block d-flex align-items-center">
+                    <div class="classic-item"><img src="images/functional.png" alt="functional image"></div>
+                    <h3 class="classic-icon redlight-color d-flex align-items-center"><img src="images/thunder.svg" alt="thunder icon">FUNCTIONAL</h3>
+                </li>
+            </ul>
     </section>
     <!--  CLASSIC END  -->
     <!--  CO-BRANDING START  -->
     <section class="co-branding">
         <h3 class="red-color text-center">聯名設計鏡框</h3>
-        <div class="d-flex justify-content-between">
-            <img class="img40" src="images/img1.png" alt="design glasses">
-            <div class="img60 d-flex flex-column justify-content-between">
-                <img src="images/img2.png" alt="design glasses">
-                <div class="pt-8 d-flex">
-                    <img src="images/img3.png" alt="design glasses">
-                    <div class="pl-8 d-flex flex-column align-items-end">
-                        <img src="images/img4.png" alt="design glasses">
-                        <div class="more-img DY-block pt-8">
-                            <div class="more-bg d-flex">
-                            <a href="#"><span class="more-text more-block">MORE<img src="images/ic_arrow.svg" alt="arrow right"></span>                            </a>
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <img class="gallery-left" src="images/img1.png" alt="design glasses">
+                <div class="gallery-right">
+                    <img src="images/img2.png" alt="design glasses">
+                    <div class="pt-1 d-flex">
+                        <img class="galleryin-left" src="images/img3.png" alt="design glasses">
+                        <div class="galleryin-right pt-1 d-flex flex-column">
+                            <img src="images/img4.png" alt="design glasses">
+                            <div class="DY-block align-items-end">
+                                <div class="more-img d-flex">
+                                    <a class="more-bg" href="#">
+                                        <span class="more-text redlight-color">MORE</span>
+                                        <span><img src="images/ic_arrow.svg" alt="arrow right"></span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="DY-block d-flex justify-content-center">
-                <div class="square1 square-text bg-w mr30 text-center"><p>Double A+</p></div>
-                <div class="square2 square-text bg-w mr30 text-center"><p>YOUTH</p></div>
-            </div>
-        </div>
+        <ul class="DY-block d-flex justify-content-center">
+            <li class="square1 square-text redlight-color bg-w mr30 text-center"><p>Double A+</p></li>
+            <li class="square2 square-text redlight-color bg-w text-center"><p>YOUTH</p></li>
+        </ul>
     </section>
     <!--  CO-BTANDING END  -->
     <!--  CUSTOMER START  -->
     <section class="customer container">
         <h3 class="red-color text-center">顧客推薦</h3>
-        <ul class="d-flex">
-            <li class="cus">
+        <ul class="d-flex justify-content-around">
+            <li class="cus mt-1">
                 <img src="images/card1.png" alt="customer">
                 <div class="cus-text">
                     <p class="cus-name">Jessy</p>
@@ -102,7 +109,7 @@
                     <p class="cus-time">Last updated 3 mins ago</p>
                 </div>
             </li>
-            <li class="cus">
+            <li class="cus mt-1">
                 <img src="images/card2.png" alt="customer">
                 <div class="cus-text">
                     <p class="cus-name">Karen</p>
@@ -110,7 +117,7 @@
                     <p class="cus-time">Last updated 3 mins ago</p>
                 </div>
             </li>
-            <li class="cus">
+            <li class="cus mt-1">
                 <img src="images/card3.png" alt="customer">
                 <div class="cus-text">
                     <p class="cus-name">Chelsea</p>
@@ -118,7 +125,7 @@
                     <p class="cus-time">Last updated 3 mins ago</p>
                 </div>
             </li>
-            <li class="cus">
+            <li class="cus mt-1">
                 <img src="images/card4.png" alt="customer">
                 <div class="cus-text">
                     <p class="cus-name">Jane</p>
@@ -132,7 +139,7 @@
     <!--  CONTACT START  -->
     <section class="contact">
         <h3 class="black-color text-center">聯絡我們</h3>
-        <form>
+        <form class="container">
             <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p><br>
             <label for="name"></label>姓名<br>
             <input type="text" name="name" placeholder="陳小明"><br>
@@ -150,15 +157,15 @@
     <!--  CONTACT END  -->
     <!--  FOOTER START  -->
     <footer class="red-background">
-        <div class="footer d-flex justify-content-between align-items-center">
-            <ul class="d-flex textBackground">
-                    <li><a href="">首頁</a></li>
-                    <li><a href="">系列鏡框</a></li>
-                    <li><a href="">門市據點</a></li>
-                    <li><a href="">部落格</a></li>
-                    <li><a href="">常見問題</a></li>
+        <div class="footer container d-flex justify-content-between align-items-center">
+            <ul class="footer-menu d-flex textBackground">
+                    <li><a href="home.html">首頁</a></li>
+                    <li><a href="products.html">系列鏡框</a></li>
+                    <li><a href="location.html">門市據點</a></li>
+                    <li><a href="blog.html">部落格</a></li>
+                    <li><a href="faq.html">常見問題</a></li>
             </ul>
-            <ul class="footer-logo d-flex">
+            <ul class="footer-logo d-flex justify-content-between">
                 <li>
                     <a href="#"><img src="images/ic_fb.svg" alt=""></a>
                 </li>
@@ -170,7 +177,7 @@
                 </li>
             </ul>
         </div>
-        <ul class="footer footer-text">
+        <ul class="footer footer-text container">
             <li class="footer-icon1 d-flex align-items-center">
                 <span class="d-flex"><img src="images/ic_phone.svg" alt=""></span>0800-000-000
             </li>

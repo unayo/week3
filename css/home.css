@@ -5,6 +5,9 @@
 }
 .slogan {
     text-align: right;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
 }
 .banner span {
     font-size: 36px;
@@ -22,6 +25,12 @@
 .intro li {
     width: 208px;
 }
+@media (max-width:992px) {   /*pad*/
+    .intro li {
+        width: 324px;
+        margin-bottom: 20px;
+    }
+}
 .card {
     display: flex;
     flex-direction: column;
@@ -37,14 +46,13 @@
 .classic-block {
     margin-bottom: 32px;
 }
-.classic h3 {
-    padding: 0 24px;
+@media (max-width:992px) {   /*pad*/
+    .classic-block {
+        margin-bottom: 8px;
+    }
 }
-.classic-block h3 img {
-    padding-right: 8px;
-}
-.sunglasses-img {
-    position: relative;
+.classic li h3 {
+    padding-left: 24px;
 }
 .sunglasses-img {
     filter: grayscale(100%);
@@ -54,54 +62,131 @@
     filter: none;
     transition: all .3s;
 } 
+.classic-item {
+    width: 60%;
+}
+.classic-icon {
+    width: 40%;
+}
+@media (max-width: 992px) {  /*pad*/
+    .classic-item{
+        width: 61%;
+    }
+    .classic-icon {
+        width: 39%;
+        order: 2;
+    }
+    .classic-icon img{
+        width: 32px;
+        height: auto;
+    }
+}
+@media (max-width: 767px) {  /*mobile*/
+    .classic-item, .classic-icon{
+        width: 100%;
+    }
+    .classic-icon{
+        filter: brightness(500);
+        position: absolute;
+        z-index: 1;
+        justify-content: center;
+    }
+}   
 /*聯名設計鏡框*/
 .co-branding {
     background: url(../images/img-bg.png) center center no-repeat;
+    background-size: cover;
     padding: 64px 0 479px 0;    
 }
 .co-branding h3 {
     padding: 64px 0 60px 0;
     color: #ffffff;
 }
-.img40 {
-    width: 39%;
+.gallery-left {
+    max-width: 33.4%;
+    padding-right: 8px;
 }
-.img60 {
-    width: 60%;
+.gallery-right {
+    max-width: 66.6%;
 }
-.pt-8 {
-    padding-top: 8px;
+.galleryin-left {
+    max-width: 20%;
+    padding-right: 8px;
 }
-.pl-8 {
-    padding-left: 8px;
+.galleryin-right {
+    max-width: 80%;
+}
+@media (max-width: 767px) {  /*mobile*/
+    .gallery-left, .gallery-right {
+        max-width: 100%;
+    }
 }
 .mr30 {
     margin-right: 30px;
 }
-.DY-block {
-    padding-top: 60px;
+@media (max-width: 767px) {  /*mobile*/
+    .mr30 {
+        margin-right: 0px;
+    }
 }
-.DY-block span {
+.DY-block {
     font-size: 72px;
     line-height: 108px;
     font-weight: 500;
-    color: #AA0601;
+    padding-top: 60px;
+}
+.more-img {
+    background: url(../images/img5.png) center center no-repeat;
+    padding: 31px 0;
+}
+.more-bg {
+    background: #fff;
+    margin-right: 10%;
+    margin-left: auto;
+}
+.more-text::before, .more-text::after {
+    content: 'MORE';
+    position: absolute;
+    transition: all .65s .3s;
+    transform: translateY(0px);
+    left: 0;
+    top: -4px;
+}
+.more-text:hover::before {
+    opacity: 0.7;
+    transform: translateY(-85px);
+}
+.more-text:hover::after {
+    opacity: 0.3;
+    transform: translateY(-145px);
 }
 .square1 {
     background: url(../images/img6.png) center center no-repeat;
-    width: 585px;
+    width: 45%;
     height: 592px;
 }
+
 .square2 {
     background: url(../images/img7.png) center center no-repeat;
-    width: 585px;
+    width: 45%;
     height: 592px;
+}
+@media (max-width: 992px) {  /*pad*/
+    .square1, .square2 {
+        width: 324px;
+        height: 280px;
+    }
+}
+@media (max-width: 767px) {  /*mobile*/
+    .square1, .square2 {
+        width: 352px;
+        height: 284px;
+    }
 }
 .square-text p {
     font-size: 72px;
     line-height: 108px;
     font-weight: 500;
-    color: #AA0601;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -120,28 +205,6 @@
     opacity: 0.5;
     transition: all .6s;
 }
-.more-img {
-    background: url(../images/img5.png) center center no-repeat;
-}
-.more-block {
-    background: #fff;
-    margin-right: 10%;
-}
-.more-text::before, .more-text::after {
-    content: 'MORE';
-    position: absolute;
-    transition: all .65s .3s;
-    transform: translateY(0px);
-    left: 0;
-}
-.more-text:hover::before {
-    opacity: 0.7;
-    transform: translateY(-85px);
-}
-.more-text:hover::after {
-    opacity: 0.3;
-    transform: translateY(-145px);
-}
 /*顧客推薦*/
 .customer {
     padding-bottom: 80px;
@@ -151,11 +214,18 @@
     color: #ffffff;
 }
 .cus {
-    margin: 0 12px;
+    width: 23%;
+    border: 1px solid #DEE2E6;
+    background: #ffffff;
+}
+@media (max-width: 992px) {  /*pad*/
+    .cus {
+        width: 49%;
+    }
 }
 .cus-text {
     padding: 12px;
-    border: 1px solid #DEE2E6;
+    
 }
 .card-name {
     font-size: 16px;
@@ -181,14 +251,14 @@
     margin-bottom: 24px;
 }
 form {
-    width: 792px;
+    max-width: 792px;
     margin: 0 auto;
 }
 input[type="text"] {
     font-size: 16px;
     line-height: 22px;
     padding: 12px 16px;
-    width: 792px;
+    width: 100%;
     margin-top: 4px;
     margin-bottom: 16px;
     border: 1px solid #000000;
@@ -201,7 +271,7 @@ textarea {
     font-size: 16px;
     line-height: 22px;
     padding: 12px 16px;
-    width: 792px;
+    width: 100%;
     height: 136px;
     margin-top: 4px;
     border: 1px solid #000000;
@@ -211,7 +281,7 @@ input[type="checkbox"] {
     margin-bottom: 40px;
 }
 input[type="submit"] {
-    width: 180px;
+    width: 100%;
     height: 54px;
     border-radius: 0;
     margin: 0 auto;
