@@ -121,6 +121,9 @@ img {
 header {
     padding: 10px 0;
 }
+.humburger {
+    display: none;
+}
 @media (max-width: 992px) {  /*pad*/
     header {
         padding: 28px 0;
@@ -128,6 +131,12 @@ header {
     .menu-m li{
         border: 1px solid #fff;
         padding: 16px 0;
+    }
+    .humburger {
+        display: block;
+    }
+    .menu-d {
+        display: none;
     }
 }
 @media (max-width: 767px) {  /*mobile*/
