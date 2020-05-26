@@ -1,0 +1,35 @@
+/*tab menu*/
+.classic-icon {
+    width: 400px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 42px;
+    line-height: 63px;
+    border: 1px solid #DCDCDC;
+    transition: all .3s;
+}
+.classic-icon:hover {
+    color: #AA0601;
+    padding-bottom: 8px;
+    border-bottom: 16px solid #AA0601;
+    transition: all .3s;
+}
+.classic-icon img{
+    filter: brightness(0);
+}
+.classic-icon:hover img{
+    filter: brightness(1);
+}
+.tab-img li {
+    width: 49%;
+}
+/*產品頁*/
+.en-title {
+    font-size: 42px;
+    line-height: 63px;
+}
+.ch-title {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 100;
+}
