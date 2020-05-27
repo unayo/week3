@@ -133,32 +133,49 @@ img {
 header {
     padding: 10px 0;
 }
-.humburger {
+.hamburger {
     display: none;
 }
+.ham-icon {
+    position: absolute;
+    left: 16px;
+    z-index: 3;
+}
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transition: all 0.8s;
+    max-height: 0px;
+    overflow: hidden;
+    z-index: 120;
+}
+.dropdown.active {
+    max-height: 200px;
+}
+.dropdown li a {
+    display: block;
+    background: #AA0601;
+    color: #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    padding: 16px 0;
+}
+.dropdown li a:hover {
+    background: #8f0400;
+}
 @media (max-width: 992px) {  /*pad*/
-    header {
-        padding: 28px 0;
-    }
-    .menu-m li{
-        border: 1px solid #fff;
-        padding: 16px 0;
-    }
-    .humburger {
-        display: block;
-    }
     .menu-d {
         display: none;
     }
-}
-@media (max-width: 767px) {  /*mobile*/
-    header {
-        padding: 0;
+    .hamburger {
+        display: block;
     }
 }
-header a {
-    color: #ffffff;
-    padding: 0 32px;
+@media (max-width: 767px) {  /*mobile*/
+    .menu-d {
+        display: none;
+    }
 }
 /*footer*/
 .footer {
