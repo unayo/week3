@@ -7,10 +7,10 @@
 }
 a {
     text-decoration:none;
+    color:#000000;
 }
 h2 {
     font-size: 64px;
-    font-weight: 500;
     line-height: 96px;
 }
 h3 {
@@ -44,11 +44,17 @@ img {
         margin-bottom: 32px;
     }
 }
+.reguler {
+    font-weight: 400;
+}
 .pt-1 {
     padding-top: 8px;
 }
 .mt-1 {
     margin-top: 8px;
+}
+.mr-1 {
+    margin-right: 8px;
 }
 .mb-0 {
     margin-bottom: 0;
@@ -103,6 +109,12 @@ img {
 /*color*/
 .red-background {
     background: #AA0601;
+}
+.brown-background {
+    background: #5F3E2D;
+}
+.orange-background {
+    background: #B75929;
 }
 .text-cackground a{
     color: #fff;
