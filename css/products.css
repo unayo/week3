@@ -1,12 +1,35 @@
 /*tab menu*/
 .classic-icon {
-    width: 400px;
+    width: 33.3%;
     padding-top: 24px;
     padding-bottom: 24px;
-    font-size: 42px;
+    font-size: 39px;
     line-height: 63px;
     border: 1px solid #DCDCDC;
     transition: all .3s;
+    font-weight: 500;
+}
+@media (max-width: 992px) {  /*pad*/
+    .classic-icon {
+        font-size: 28px;
+        line-height: 42px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .classic-icon img {
+        width: 32px;
+        height: 32px;
+    }
+}
+@media (max-width: 767px) {  /*mobile*/
+    .classic-icon {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .classic-icon img {
+        width: 15px;
+        height: 15px;
+    }
 }
 .classic-icon:hover {
     color: #AA0601;

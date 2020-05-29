@@ -12,6 +12,7 @@ a {
 h2 {
     font-size: 64px;
     line-height: 96px;
+    font-weight: 500;
 }
 h3 {
     font-size: 48px;
@@ -133,6 +134,10 @@ img {
 header {
     padding: 10px 0;
 }
+.menu-d a {
+    color: #ffffff;
+    padding: 0 32px;
+}
 .hamburger {
     display: none;
 }
@@ -140,6 +145,8 @@ header {
     position: absolute;
     left: 16px;
     z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .dropdown {
     position: absolute;
@@ -179,7 +186,8 @@ header {
 }
 /*footer*/
 .footer {
-    padding: 36px 0 27px 0;
+    padding-top: 36px;
+    padding-bottom: 27px;
 }
 .footer a {
     color: #ffffff;
@@ -201,6 +209,9 @@ header {
     line-height: 54px;
 }
 @media (max-width: 992px) {  /*pad*/
+    .hidden-p {
+        display: none;
+    }
     .footer-logo img{
         width: 24px;
     }
@@ -209,5 +220,33 @@ header {
     }
     .footer-text{
         font-size: 36px;
+    }
+    .footer-icon1, .footer-icon2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .footer-icon1 img, .footer-icon2 img {
+        width: 23px;
+        height: 23px;
+    }
+    .footer-icon1 span {
+        padding-right: 12px;
+    }
+    
+}
+@media (max-width: 767px) {  /*mobile*/
+    .hidden-m {
+        display: none;
+    }
+    .footer-m {
+        position: absolute;
+        right: 0;
+    }
+    .footer-icon1, .footer-icon2 {
+        font-size: 16px;
+    }
+    .footer-icon1 img, .footer-icon2 img {
+        width: 13px;
+        height: 13px;
     }
 }

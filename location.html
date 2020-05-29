@@ -13,28 +13,42 @@
 </head>
 <body>
     <!--  HEADER START  -->
-    <header class="red-background d-flex justify-content-around align-items-center">
-        <h1 class="logo"><a href="home.html"><img src="images/logo.png" alt="logo"></a></h1>
-        <ul class="d-flex textBackground">
-            <li><a href="products.html">系列鏡框</a></li>
-            <li><a href="location.html">門市據點</a></li>
-            <li><a href="blog.html">部落格</a></li>
-            <li><a href="faq.html">常見問題</a></li>
-        </ul>
+    <header class="red-background">
+        <!-- desktop-->
+        <nav class="menu-d d-flex justify-content-around align-items-center">
+            <h1 class="logo"><a href="home.html"><img src="images/logo.png" alt="logo"></a></h1>
+            <ul class="d-flex textBackground">
+                <li><a href="products.html">系列鏡框</a></li>
+                <li><a href="location.html">門市據點</a></li>
+                <li><a href="blog.html">部落格</a></li>
+                <li><a href="faq.html">常見問題</a></li>
+            </ul>
+        </nav>
+        <!-- pad/mobile-->
+        <nav class="hamburger text-center d-flex justify-content-around align-items-center">
+            <a href="#" class="ham-icon"><img src="images/ic_menu.svg" alt=""></a>
+            <h1 class="hamburger-logo"><a href="home.html"><img src="images/logo.png" alt="logo"></a></h1>
+            <ul class="dropdown">
+                <li><a href="products.html">系列鏡框</a></li>
+                <li><a href="location.html">門市據點</a></li>
+                <li><a href="blog.html">部落格</a></li>
+                <li><a href="faq.html">常見問題</a></li>
+            </ul>
+        </nav>
     </header>
     <!--  HEADER END  -->
 
     <!--  FOOTER START  -->
     <footer class="red-background">
-        <div class="footer d-flex justify-content-between align-items-center">
-            <ul class="d-flex textBackground">
+        <div class="footer footer-m container d-flex justify-content-between align-items-center">
+            <ul class="hidden-m d-flex textBackground">
                     <li><a href="home.html">首頁</a></li>
                     <li><a href="products.html">系列鏡框</a></li>
                     <li><a href="location.html">門市據點</a></li>
                     <li><a href="blog.html">部落格</a></li>
                     <li><a href="faq.html">常見問題</a></li>
             </ul>
-            <ul class="footer-logo d-flex">
+            <ul class="footer-logo d-flex justify-content-between">
                 <li>
                     <a href="#"><img src="images/ic_fb.svg" alt=""></a>
                 </li>
@@ -46,7 +60,7 @@
                 </li>
             </ul>
         </div>
-        <ul class="footer footer-text">
+        <ul class="footer footer-text container">
             <li class="footer-icon1 d-flex align-items-center">
                 <span class="d-flex"><img src="images/ic_phone.svg" alt=""></span>0800-000-000
             </li>
@@ -55,7 +69,7 @@
             </li>
             <li><span><hr></span></li>
             <li class="d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center">
+                <div class="hidden-p hidden-m d-flex align-items-center">
                     <img src="images/logo.png" alt="logo"><p>&nbsp;&nbsp;Copyright © 2020 Glasses.All rights reserved.</p>
                 </div>
                 <div>

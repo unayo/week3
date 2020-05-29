@@ -13,6 +13,13 @@
     font-size: 36px;
     line-height: 54px;
 }
+@media (max-width:992px) {   /*pad*/
+    .banner span {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+}
 /*用專業的心，做專業的事*/
 .intro {
     padding-top: 64px;
@@ -218,9 +225,17 @@
     border: 1px solid #DEE2E6;
     background: #ffffff;
 }
+.cus img {
+    width: 100%;
+}
 @media (max-width: 992px) {  /*pad*/
     .cus {
         width: 49%;
+    }
+}
+@media (max-width: 767px) {  /*mobile*/
+    .cus {
+        width: 98.5%;
     }
 }
 .cus-text {
