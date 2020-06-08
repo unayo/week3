@@ -43,6 +43,14 @@
 .classic-icon:hover img{
     filter: brightness(1);
 }
+.tab-img img{
+    height: 309px;
+}
+@media (max-width: 767px) {  /*mobile*/
+    .tab-img img{
+        height: 144px;
+    }
+}
 .tab-img li {
     width: 49%;
 }
