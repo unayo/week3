@@ -1,0 +1,17 @@
+/*Page Banner*/
+.pageBanner {
+    background: url('../images/ban-faq.png')center center;
+    background-size: cover;
+}
+.PageTitle {
+    height: 304px;
+}
+/*content*/
+.content {
+    margin-top: 88px;
+    margin-bottom: 156px;
+}
+.faqTitle {
+    font-size: 32px;
+    line-height: 63px;
+}
