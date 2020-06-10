@@ -2,6 +2,7 @@
 .banner {
     background: url('../images/banner.png') center center no-repeat;
     height: 100vh;
+    background-size: cover;
 }
 .slogan {
     text-align: right;
